@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -70,6 +69,55 @@
     <h2>🤖 Machine Learning</h2>
     <p>
       Machine Learning é um ramo da IA que permite que algoritmos aprendam a partir de dados,
+      melhorando seu desempenho com o tempo sem serem explicitamente programados.
+    </p>
+    <ul>
+      <li>Aprendizado Supervisionado</li>
+      <li>Aprendizado Não Supervisionado</li>
+      <li>Aprendizado por Reforço</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🧠 Deep Learning</h2>
+    <p>
+      Deep Learning utiliza redes neurais profundas para resolver problemas complexos como
+      visão computacional, reconhecimento de voz, tradução automática e geração de imagens.
+    </p>
+    <p>Frameworks populares incluem PyTorch e TensorFlow.</p>
+  </div>
+
+  <div class="card">
+    <h2>🚀 Aplicações da IA</h2>
+    <p>
+      A Inteligência Artificial está presente em diversas áreas como saúde, jogos, finanças,
+      segurança, automação industrial e criação de conteúdo digital.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>🌐 Futuro do NeuralHub</h2>
+    <p>
+      O NeuralHub vai evoluir para oferecer demonstrações práticas de IA, projetos reais,
+      artigos técnicos e aplicações com Machine Learning e Deep Learning.
+    </p>
+  </div>
+  <div class="card">
+    <h2>📧 Contato</h2>
+    <p>
+      Para entrar em contato com o NeuralHub, envie um e-mail para:
+      <br /><br />
+      <strong>denise@gmail.com</strong>
+    </p>
+  </div>
+</section>
+
+<footer>
+  NeuralHub © 2025 • Inteligência Artificial e Machine Learning
+</footer>
+
+</body>
+</html>
       melhorando seu desempenho com o tempo sem serem explicitamente programados.
     </p>
     <ul>
