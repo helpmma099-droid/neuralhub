@@ -113,23 +113,37 @@
       artigos técnicos e aplicações com Machine Learning e Deep Learning.
     </p>
   </div>
-    <div class="card" id="sobre">
+      <div class="card" id="sobre">
     <h2>ℹ️ Sobre o NeuralHub</h2>
     <p>
-      O NeuralHub é um projeto focado em educação e divulgação de Inteligência Artificial e Machine Learning.
-      O objetivo é tornar conceitos avançados acessíveis, claros e aplicáveis no mundo real.
+      Esta é a versão resumida. Para saber mais, acesse a página completa:
+      <br /><br />
+      <a href="sobre.html" style="color:#22d3ee;text-decoration:none;">→ Página Sobre</a>
     </p>
   </div>
 
-  <div class="card" id="contato">
+    <div class="card" id="contato">
     <h2>📧 Contato</h2>
-    <p>
-      Para entrar em contato com o NeuralHub, envie um e-mail para:
-      <br /><br />
-      <strong>denise@gmail.com</strong>
-    </p>
+    <form style="display:flex;flex-direction:column;gap:12px;max-width:400px;">
+      <input type="text" placeholder="Seu nome" required style="padding:10px;border-radius:8px;border:none;" />
+      <input type="email" placeholder="Seu e-mail" required style="padding:10px;border-radius:8px;border:none;" />
+      <textarea placeholder="Sua mensagem" rows="4" style="padding:10px;border-radius:8px;border:none;"></textarea>
+      <button type="submit" style="padding:10px;border-radius:10px;border:none;background:#22d3ee;color:black;font-weight:bold;cursor:pointer;">Enviar</button>
+    </form>
+    <p style="margin-top:15px;">Ou envie um e-mail para <strong>denise@gmail.com</strong></p>
+  </div>
+  <div class="card">
+    <h2>👁️ Contador de Visitas</h2>
+    <p>Este site já recebeu <strong><span id="counter">0</span></strong> visitas.</p>
   </div>
 </section>
+
+<script>
+  let count = localStorage.getItem('neuralhub_visits') || 0;
+  count++;
+  localStorage.setItem('neuralhub_visits', count);
+  document.getElementById('counter').innerText = count;
+</script>
 
 <footer>
   NeuralHub © 2025 • Inteligência Artificial e Machine Learning
