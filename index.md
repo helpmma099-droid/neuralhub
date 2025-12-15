@@ -138,32 +138,16 @@
   </div>
 </section>
 
+<script>
+  let count = localStorage.getItem('neuralhub_visits') || 0;
+  count++;
+  localStorage.setItem('neuralhub_visits', count);
+  document.getElementById('counter').innerText = count;
 </script>
-
-body>
-</html>
 
 <footer>
   NeuralHub © 2025 • Inteligência Artificial e Machine Learning
 </footer>
 
-<script>
-  (function () {
-    const lang = navigator.language || navigator.userLanguage;
-    const isEnglish = lang.startsWith("en");
-
-    if (isEnglish && !window.location.pathname.includes("index-en")) {
-      window.location.href = "index-en.html";
-    }
-
-    if (!isEnglish && window.location.pathname.includes("index-en")) {
-      window.location.href = "index.html";
-    }
-  })();
-</script>
-
-</script>
-
 </body>
 </html>
-
