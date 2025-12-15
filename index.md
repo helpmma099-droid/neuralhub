@@ -46,16 +46,27 @@
       color: #94a3b8;
       border-top: 1px solid rgba(255,255,255,0.1);
     }
-  </style>
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(20px);} to { opacity:1; transform: translateY(0);} }
+</style>
 </head>
 <body>
+<nav style="position:fixed;top:0;left:0;width:100%;background:rgba(0,0,0,0.85);backdrop-filter:blur(10px);padding:15px 30px;display:flex;justify-content:space-between;align-items:center;z-index:1000;">
+  <strong style="font-size:1.2rem;color:#22d3ee;">NeuralHub</strong>
+  <div style="display:flex;gap:20px;">
+    <a href="#home" style="color:#f8fafc;text-decoration:none;">Home</a>
+    <a href="#ia" style="color:#f8fafc;text-decoration:none;">IA</a>
+    <a href="#sobre" style="color:#f8fafc;text-decoration:none;">Sobre</a>
+    <a href="#contato" style="color:#f8fafc;text-decoration:none;">Contato</a>
+  </div>
+</nav>
+<div style="height:80px"></div>
 
-<header>
+<header id="home">
   <h1>NeuralHub</h1>
   <p>Explorando Inteligência Artificial, Machine Learning e o futuro da tecnologia</p>
 </header>
 
-<section>
+<section id="ia" style="animation:fadeIn 1.2s ease-in;">
   <div class="card">
     <h2>🧠 O que é Inteligência Artificial?</h2>
     <p>
@@ -102,7 +113,15 @@
       artigos técnicos e aplicações com Machine Learning e Deep Learning.
     </p>
   </div>
-  <div class="card">
+    <div class="card" id="sobre">
+    <h2>ℹ️ Sobre o NeuralHub</h2>
+    <p>
+      O NeuralHub é um projeto focado em educação e divulgação de Inteligência Artificial e Machine Learning.
+      O objetivo é tornar conceitos avançados acessíveis, claros e aplicáveis no mundo real.
+    </p>
+  </div>
+
+  <div class="card" id="contato">
     <h2>📧 Contato</h2>
     <p>
       Para entrar em contato com o NeuralHub, envie um e-mail para:
