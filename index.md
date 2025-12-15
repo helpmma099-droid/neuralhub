@@ -8,8 +8,8 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #0f172a, #020617);
-      color: #e5e7eb;
+      background: linear-gradient(135deg, #000000, #020202);
+      color: #f8fafc;
     }
     header {
       padding: 60px 20px;
@@ -29,15 +29,15 @@
       padding: 40px 20px;
     }
     .card {
-      background: rgba(255,255,255,0.05);
+      background: rgba(255,255,255,0.03);
       border-radius: 16px;
       padding: 24px;
       margin-bottom: 24px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.8);
     }
     .card h2 {
       margin-top: 0;
-      color: #38bdf8;
+      color: #22d3ee;
     }
     footer {
       text-align: center;
