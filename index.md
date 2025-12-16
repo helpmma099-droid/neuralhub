@@ -1,153 +1,211 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NeuralHub — Inteligência Artificial</title>
   <meta name="description" content="NeuralHub é um site sobre Inteligência Artificial, Machine Learning e Deep Learning." />
+
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #000000, #020202);
+      background: radial-gradient(circle at top, #020617, #000000);
       color: #f8fafc;
     }
+
+    /* ===== MENU TOPO ===== */
+    .topbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      z-index: 1000;
+      box-shadow: 0 0 25px rgba(34, 211, 238, 0.15);
+    }
+
+    .topbar .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #22d3ee;
+      text-shadow: 0 0 12px #22d3ee;
+    }
+
+    .topbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .topbar ul li {
+      margin-left: 25px;
+    }
+
+    .topbar ul li a {
+      text-decoration: none;
+      color: #e5e7eb;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .topbar ul li a:hover {
+      color: #22d3ee;
+      text-shadow: 0 0 10px #22d3ee;
+    }
+
+    /* ===== HEADER ===== */
     header {
-      padding: 60px 20px;
+      padding: 140px 20px 80px;
       text-align: center;
     }
+
     header h1 {
       font-size: 3rem;
       margin-bottom: 10px;
+      text-shadow: 0 0 20px #22d3ee;
     }
+
     header p {
       font-size: 1.2rem;
       color: #94a3b8;
     }
+
+    /* ===== SECTIONS ===== */
     section {
       max-width: 1000px;
       margin: auto;
       padding: 40px 20px;
     }
+
     .card {
-      background: rgba(255,255,255,0.03);
-      border-radius: 16px;
-      padding: 24px;
-      margin-bottom: 24px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+      background: rgba(255,255,255,0.04);
+      border-radius: 18px;
+      padding: 28px;
+      margin-bottom: 28px;
+      box-shadow: 0 0 30px rgba(34,211,238,0.12);
+      animation: fadeUp 1s ease;
     }
+
     .card h2 {
       margin-top: 0;
       color: #22d3ee;
+      text-shadow: 0 0 10px #22d3ee;
     }
+
+    /* ===== CONTATO ===== */
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: none;
+      background: #020617;
+      color: #f8fafc;
+    }
+
+    form button {
+      background: #22d3ee;
+      color: #000;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    form button:hover {
+      background: #38bdf8;
+      box-shadow: 0 0 15px #22d3ee;
+    }
+
     footer {
       text-align: center;
-      padding: 30px 20px;
-      font-size: 0.9rem;
+      padding: 30px;
       color: #94a3b8;
       border-top: 1px solid rgba(255,255,255,0.1);
     }
-  @keyframes fadeIn { from { opacity: 0; transform: translateY(20px);} to { opacity:1; transform: translateY(0);} }
-</style>
-</head>
-<body>
-<nav style="position:fixed;top:0;left:0;width:100%;background:rgba(0,0,0,0.85);backdrop-filter:blur(10px);padding:15px 30px;display:flex;justify-content:space-between;align-items:center;z-index:1000;">
-  <strong style="font-size:1.2rem;color:#22d3ee;">NeuralHub</strong>
-  <div style="display:flex;gap:20px;">
-    <a href="#home" style="color:#f8fafc;text-decoration:none;">Home</a>
-    <a href="#ia" style="color:#f8fafc;text-decoration:none;">IA</a>
-    <a href="#sobre" style="color:#f8fafc;text-decoration:none;">Sobre</a>
-    <a href="#contato" style="color:#f8fafc;text-decoration:none;">Contato</a>
-  </div>
-</nav>
-<div style="height:80px"></div>
 
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<nav class="topbar">
+  <div class="logo">NeuralHub</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#ia">IA</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
 <header id="home">
   <h1>NeuralHub</h1>
-  <p>Explorando Inteligência Artificial, Machine Learning e o futuro da tecnologia</p>
+  <p>Explorando Inteligência Artificial, Machine Learning e Deep Learning</p>
 </header>
 
-<section id="ia" style="animation:fadeIn 1.2s ease-in;">
+<!-- IA -->
+<section id="ia">
   <div class="card">
-    <h2>🧠 O que é Inteligência Artificial?</h2>
-    <p>
-      Inteligência Artificial (IA) é a área da computação que cria sistemas capazes de aprender,
-      reconhecer padrões, tomar decisões e gerar conteúdo. A IA já faz parte do nosso dia a dia,
-      desde recomendações até veículos autônomos.
-    </p>
+    <h2>🧠 Inteligência Artificial</h2>
+    <p>A Inteligência Artificial permite que sistemas aprendam, raciocinem e criem soluções inovadoras para problemas complexos.</p>
   </div>
 
   <div class="card">
     <h2>🤖 Machine Learning</h2>
-    <p>
-      Machine Learning é um ramo da IA que permite que algoritmos aprendam a partir de dados,
-      melhorando seu desempenho com o tempo sem serem explicitamente programados.
-    </p>
-    <ul>
-      <li>Aprendizado Supervisionado</li>
-      <li>Aprendizado Não Supervisionado</li>
-      <li>Aprendizado por Reforço</li>
-    </ul>
+    <p>Machine Learning é o estudo de algoritmos que aprendem padrões a partir de dados e melhoram com o tempo.</p>
   </div>
 
   <div class="card">
     <h2>🧠 Deep Learning</h2>
-    <p>
-      Deep Learning utiliza redes neurais profundas para resolver problemas complexos como
-      visão computacional, reconhecimento de voz, tradução automática e geração de imagens.
-    </p>
-    <p>Frameworks populares incluem PyTorch e TensorFlow.</p>
-  </div>
-
-  <div class="card">
-    <h2>🚀 Aplicações da IA</h2>
-    <p>
-      A Inteligência Artificial está presente em diversas áreas como saúde, jogos, finanças,
-      segurança, automação industrial e criação de conteúdo digital.
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>🌐 Futuro do NeuralHub</h2>
-    <p>
-      O NeuralHub vai evoluir para oferecer demonstrações práticas de IA, projetos reais,
-      artigos técnicos e aplicações com Machine Learning e Deep Learning.
-    </p>
-  </div>
-      <div class="card" id="sobre">
-    <h2>ℹ️ Sobre o NeuralHub</h2>
-    <p>
-      Esta é a versão resumida. Para saber mais, acesse a página completa:
-      <br /><br />
-      <a href="sobre.html" style="color:#22d3ee;text-decoration:none;">→ Página Sobre</a>
-    </p>
-  </div>
-
-    <div class="card" id="contato">
-    <h2>📧 Contato</h2>
-    <form style="display:flex;flex-direction:column;gap:12px;max-width:400px;">
-      <input type="text" placeholder="Seu nome" required style="padding:10px;border-radius:8px;border:none;" />
-      <input type="email" placeholder="Seu e-mail" required style="padding:10px;border-radius:8px;border:none;" />
-      <textarea placeholder="Sua mensagem" rows="4" style="padding:10px;border-radius:8px;border:none;"></textarea>
-      <button type="submit" style="padding:10px;border-radius:10px;border:none;background:#22d3ee;color:black;font-weight:bold;cursor:pointer;">Enviar</button>
-    </form>
-    <p style="margin-top:15px;">Ou envie um e-mail para <strong>denise@gmail.com</strong></p>
-  </div>
-  <div class="card">
-    <h2>👁️ Contador de Visitas</h2>
-    <p>Este site já recebeu <strong><span id="counter">0</span></strong> visitas.</p>
+    <p>Deep Learning utiliza redes neurais profundas para visão computacional, linguagem natural e IA generativa.</p>
   </div>
 </section>
 
-<script>
-  let count = localStorage.getItem('neuralhub_visits') || 0;
-  count++;
-  localStorage.setItem('neuralhub_visits', count);
-  document.getElementById('counter').innerText = count;
-</script>
+<!-- CONTATO -->
+<section id="contato">
+  <div class="card">
+    <h2>📩 Contato</h2>
+    <p>Email: <strong>denise@gmail.com</strong></p>
+
+    <form>
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu email" required />
+      <textarea rows="4" placeholder="Sua mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
 
 <footer>
   NeuralHub © 2025 • Inteligência Artificial e Machine Learning
 </footer>
+
+<!-- IDIOMA AUTOMÁTICO -->
+<script>
+  (function () {
+    const lang = navigator.language || navigator.userLanguage;
+    const isEnglish = lang.startsWith("en");
+
+    if (isEnglish && !window.location.pathname.includes("index-en")) {
+      window.location.href = "index-en.html";
+    }
+  })();
+</script>
 
 </body>
 </html>
